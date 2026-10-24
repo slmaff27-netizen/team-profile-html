@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Tim Hebat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #3498db;
+            margin: 8px auto 0;
+            border-radius: 2px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: #3498db;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+        }
+
+        .btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tentang Kelompok Kami</h1>
+        <p>Halo! Kami adalah sekelompok developer pemula yang bersemangat mendalami dunia <span class="highlight">pengembangan web</span> dan menguasai <span class="highlight">kolaborasi Git</span> untuk menciptakan karya terbaik bersama.</p>
+        <a href="index.html" class="btn">Kembali ke Beranda</a>
+    </div>
+
+</body>
+</html>
